@@ -1,6 +1,6 @@
 # Rossmann Sales Prediction
 ## 
-![tesla_1024_1024_1024](https://user-images.githubusercontent.com/68538809/118410140-e2fbf200-b685-11eb-8c96-6600d7e8c8ea.jpg)
+![customer-featured-rossmann](https://user-images.githubusercontent.com/68538809/134378504-6a84e0ec-9244-4b90-abcf-20643932b80f.jpg)
 
 # 1. Context.
 
