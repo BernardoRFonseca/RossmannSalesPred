@@ -1,6 +1,7 @@
 # Rossmann Sales Prediction
 ## 
-![customer-featured-rossmann](https://user-images.githubusercontent.com/68538809/134378504-6a84e0ec-9244-4b90-abcf-20643932b80f.jpg)
+![csm_rossmann_shop_foto_stralsund_1633a5fb67](https://user-images.githubusercontent.com/68538809/134378783-172d7fcd-302c-463b-8f30-d855285e82ac.jpg)
+
 
 # 1. Context.
 
