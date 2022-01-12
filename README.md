@@ -59,7 +59,7 @@ On feature creation, **11 columns were created and 2 were modified**:
 
 **Based on the attribute 'Date', 5 features were derived** - 'year', 'month', 'day', 'week_of_year' and 'year_week'
 
-**Based on the attribute **'competition_open_since_year' 2 features were derived** - 'competition_since' and 'competition_time_month'
+**Based on the attribute 'competition_open_since_year' 2 features were derived** - 'competition_since' and 'competition_time_month'
 
 **Based on the attribute 'promo_since' 3 features were derived** - 'promo_since', 'promo_time_week' and 'promo_time_day'
 
