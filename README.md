@@ -55,26 +55,37 @@ Categorical attributes statistic analysis:
 
 ### Step 2. Feature Engineering
 
+On feature creation, 11 columns were created and 2 were modified:
 
-### Step 3. Exploratory Data Analysis (EDA)
+Based on the attribute 'Date', 5 features were derived - 'year', 'month', 'day', 'week_of_year' and 'year_week'
+Based on the attribute 'competition_open_since_year' 2 features were derived - 'competition_since' and 'competition_time_month'
+Based on the attribute 'promo_since' 3 features were derived - 'promo_since', 'promo_time_week' and 'promo_time_day'
+Based on the attributed 'promo_interval' and 'month_map' 1 feature was created - 'is_promo'
 
+'assortment' and 'state_holiday' were modified, the values were changed to a descriptive format
 
-### Step 4. Data Preparation
-
-
-### Step 5. Feature Selection
-
-
-### Step 6. Machine Learning Modelling
-
-
-### Step 7. Hyperparameter Fine Tuning
+### Step 3. Data Filtering
 
 
-### Step 8. Final Model
+### Step 4. Exploratory Data Analysis (EDA)
 
 
-### Step 9. Performance Evaluation and Interpretation
+### Step 5. Data Preparation
+
+
+### Step 6. Feature Selection
+
+
+### Step 7. Machine Learning Modelling
+
+
+### Step 8. Hyperparameter Fine Tuning
+
+
+### Step 9. Final Model
+
+
+### Step 10. Performance Evaluation and Interpretation
 
 
 # 3. Data Insights
