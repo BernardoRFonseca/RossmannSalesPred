@@ -57,7 +57,7 @@ Categorical attributes statistic analysis:
 
 On feature creation, **11 columns were created and 2 were modified**:
 
-**Based on the attribute 'Date'**, 5 features were derived** - 'year', 'month', 'day', 'week_of_year' and 'year_week'
+**Based on the attribute 'Date', 5 features were derived** - 'year', 'month', 'day', 'week_of_year' and 'year_week'
 
 **Based on the attribute **'competition_open_since_year' 2 features were derived** - 'competition_since' and 'competition_time_month'
 
@@ -65,7 +65,7 @@ On feature creation, **11 columns were created and 2 were modified**:
 
 **Based on the attributed 'promo_interval' and 'month_map' 1 feature was created** - 'is_promo'
 
-'assortment' and 'state_holiday' were modified, the values were changed to a descriptive format
+**'assortment' and 'state_holiday' were modified**, the values were changed to a descriptive format
 
 ### Step 3. Data Filtering
 
