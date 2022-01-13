@@ -69,6 +69,10 @@ On feature creation, **11 columns were created and 2 were modified**:
 
 ### Step 3. Data Filtering
 
+Two types of data filtering were used:
+
+- **Rows filtering**: I have filtered data based on open days in which sales were made as this is a sales analysis 
+- **Columns Selection**: I have dropped 4 columns. 'Customers' as they would not be part of a prediction dataset. 'Open' as this column is no longer useful after filtering based on exclusively open days. 'Promo_interval' and  'Month_map' were useful to derive new features but give no additional inputs to the model.
 
 ### Step 4. Exploratory Data Analysis (EDA)
 
