@@ -2,6 +2,7 @@
 ## 
 ![csm_rossmann_shop_foto_stralsund_1633a5fb67](https://user-images.githubusercontent.com/68538809/148125358-4b61a4af-bc42-4901-8633-49aa49a984b5.png)
 
+[![python](http://ForTheBadge.com/images/badges/made-with-python.svg)](https://www.python.org/)
 
 # 1. Business Context.
 
@@ -76,6 +77,7 @@ Two types of data filtering were used:
 
 ### Step 4. Exploratory Data Analysis (EDA)
 
+On Exploratory Data Analysis, Univariate, Bivariate, and Multivariates study was performed to help understand the statistical properties of each attribute, correlations, and hypothesis testing.
 
 ### Step 5. Data Preparation
 
