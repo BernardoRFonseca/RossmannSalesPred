@@ -81,26 +81,41 @@ On Exploratory Data Analysis, Univariate, Bivariate, and Multivariates study was
 
 ### Step 5. Data Preparation
 
+In this section, Rescaling (Robust Scaler and MinMax Scaler), Encoding (One Hot, Label and Ordinal Encoding), Variable Transformation (Logarithmic Transformation), and Nature Transformations of the variables were carried out.
 
 ### Step 6. Feature Selection
 
+To select the features to be used, two methods were used:
+
+1. Application of Boruta using RandomForestRegressor method;
+2. EDA insights.
+
+**From Boruta Feature Selection:** 'store', 'promo', 'store_type', 'assortment', 'competition_distance', 'competition_open_since_month', 'competition_open_since_year', 'promo2', 'promo2_since_week', 'promo2_since_year', 'competition_time_month', 'promo_time_week', 'promo_time_day', 'day_of_week_sin', 'day_of_week_cos', 'month_cos', 'day_sin', 'day_cos', week_of_year_cos'
+
+**From EDA:** Features selected from Boruta go in accordance with EDA
+
+In addition, 16 features have not been selected, either for lack of importance or for being used previously to derive new features.
 
 ### Step 7. Machine Learning Modelling
 
+Machine learning models were trained and passed through Cross-Validation to evaluate the "real" performance. 
 
 ### Step 8. Hyperparameter Fine Tuning
 
+Based on Machine Learning Modelling results, the best model was chosen and submitted to Hyperparameter Fine Tuning to optimize its performance.
 
-### Step 9. Final Model
-
-
-### Step 10. Performance Evaluation and Interpretation
-
+### Step 9. Error Translation and Interpretation
 
 # 3. Data Insights
 
 # 4. Machine Learning Model Applied
 
+The following Machine Learning models were tested and cross-validated:
+
+- **Linear Regression**
+- **Linear Regression Regularized - LASSO**
+- **Random Forest**
+- **XGBoost Regressor**
 
 # 5. Machine Learning Model Performance
 
