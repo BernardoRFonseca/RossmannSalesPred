@@ -119,6 +119,28 @@ The following Machine Learning models were tested and cross-validated:
 
 # 5. Machine Learning Model Performance
 
+To evaluate the performance of the models, 3 metrics were used:
+
+**Mean Absolute Error (MAE)**
+
+**Mean Absolute Percentage Error (MAPE)**
+
+**Root Mean Square Error (RMSE)**
+
+
+The indicators "MAE" and "MAPE" were the ones to assume the major importance as it represents the difference between the predicted and the real values. 
+
+The following table discloses the cross-validated ("real") performance of all the models used:
+
+|       Model Name          |        MAE CV       |     MAPE CV    |      RMSE CV       |
+|:-------------------------:|:-------------------:|:--------------:|:------------------:|
+| XGBoost Regressor          |  1096.96 +/- 179.03   | 0.15 +/- 0.02	 | 1578.28 +/- 246.71 |
+| Linear Regression Regularized Model - Lasso                     |  2117.23 +/- 342.11	   | 2117.23 +/- 342.11 | 3058.18 +/- 504.81 |
+| Linear Regression     |  2079.95 +/- 303.16	    | 0.29 +/- 0.01	 | 2958.57 +/- 473.83 |
+| Random Forest Regressor              |  843.13 +/- 225.18 | 0.12 +/- 0.02 | 2958.57 +/- 473.83 |
+
+Although Random Forest Regressor holds the best MAE and MAPE result, **"XGBoost Regressor"** will be the choosen model due to it's perfomance, low-memory usage and high fine-tunning possibilities.
+
 
 # 6. Business Results
 
