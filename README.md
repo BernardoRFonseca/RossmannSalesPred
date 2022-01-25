@@ -21,6 +21,12 @@ With this model, the management team (including the CFO) will be able to manage 
 A report with the following analysis is the deliverable goals:
 
 
+1. Key findings on stores most relevant attributes.
+
+2. Stores revenue prediction for the upcoming 6 weeks.
+
+3. Create online bot that automatically generates specific store revenue prediction based on request.
+
 # 2. The Solution
 
 ## Solution strategy
