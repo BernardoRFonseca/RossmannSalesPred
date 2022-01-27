@@ -6,11 +6,11 @@
 
 # 1. Business Context.
 
-Dirk Rossmann GmbH is one of the largest drug store chains in Europe with around 56,200 employees and over €10 billion annual revenue in Germany, Poland, Hungary, the Czech Republic, Turkey, Albania, Kosovo and Spain. 
+**Dirk Rossmann GmbH is one of the largest drug store chains in Europe with around 56,200 employees and over €10 billion annual revenue** in Germany, Poland, Hungary, the Czech Republic, Turkey, Albania, Kosovo, and Spain. 
 
-The scope of this project is based on a CFO demand: stores will be renovated, and for that, the budget needs to be aligned with each store's sales. Adding to that, it was requested to predict each store sales for the following 6 weeks.
+The scope of this project is based on a CFO demand: stores will be renovated, and for that, the budget needs to be aligned with each store's sales. Adding to that, it was requested to predict each store's sales for the following 6 weeks.
 
-In this context, this project intends to provide the management team with a 6 week store sales prediciton.
+In this context, **this project intends to provide the management team with a 6-week store sales prediction.**
 
 The solution will be available as a Telegram bot, which can be accessed by clicking below:
 
@@ -54,25 +54,27 @@ The initial dataset has 1.017.209 rows and 18 columns. Follows the features desc
 - **Promo2Since[Year/Week]**: Describes the year and calendar week when the store started participating in Promo2  
 - **PromoInterval**: The consecutive intervals Promo2 is started, naming the months the promotion is started anew. E.g. "Feb,May,Aug,Nov" means each round starts in February, May, August, November of any given year for that store
 
-Numerical attributes statistic analysis:
+**Statistic analysis:**
 
- ![numericalfeatures](https://user-images.githubusercontent.com/68538809/149192046-bbd94f39-49da-49be-a8d7-489191b0324d.JPG)
+***Numerical attributes***
 
-Categorical attributes statistic analysis:
+ ![numericalfeatures](https://user-images.githubusercontent.com/68538809/151344296-99fefa06-9864-4941-a367-ef5ab24afd74.png)
 
-![categorical features](https://user-images.githubusercontent.com/68538809/149192066-cd8b2b68-3ad2-422a-a274-0b2caa62df45.JPG)
+***Categorical attributes*** 
+
+![categorical features](https://user-images.githubusercontent.com/68538809/151350651-ec1d4d4a-cd01-4e99-8ea5-2fb668c7a6e4.png)
 
 ### Step 2. Feature Engineering
 
 On feature creation, **11 columns were created and 2 were modified**:
 
-**Based on the attribute 'Date', 5 features were derived** - 'year', 'month', 'day', 'week_of_year' and 'year_week'
+**Based on** the attribute **'Date'**, 5 features were derived: 'year', 'month', 'day', 'week_of_year' and 'year_week'
 
-**Based on the attribute 'competition_open_since_year' 2 features were derived** - 'competition_since' and 'competition_time_month'
+**Based on** the attribute **'competition_open_since_year'** 2 features were derived: 'competition_since' and 'competition_time_month'
 
-**Based on the attribute 'promo_since' 3 features were derived** - 'promo_since', 'promo_time_week' and 'promo_time_day'
+**Based on** the attribute **'promo_since'** 3 features were derived: 'promo_since', 'promo_time_week' and 'promo_time_day'
 
-**Based on the attributed 'promo_interval' and 'month_map' 1 feature was created** - 'is_promo'
+**Based on** the attributed **'promo_interval' and 'month_map'** 1 feature was created: 'is_promo'
 
 **'assortment' and 'state_holiday' were modified**, the values were changed to a descriptive format
 
@@ -80,7 +82,7 @@ On feature creation, **11 columns were created and 2 were modified**:
 
 Two types of data filtering were used:
 
-- **Rows filtering**: I have filtered data based on open days in which sales were made as this is a sales analysis 
+- **Rows Filtering**: I have filtered data based on open days in which sales were made as this is a sales analysis.
 - **Columns Selection**: I have dropped 4 columns. 'Customers' as they would not be part of a prediction dataset. 'Open' as this column is no longer useful after filtering based on exclusively open days. 'Promo_interval' and  'Month_map' were useful to derive new features but give no additional inputs to the model.
 
 ### Step 4. Exploratory Data Analysis (EDA)
@@ -95,10 +97,10 @@ In this section, Rescaling (Robust Scaler and MinMax Scaler), Encoding (One Hot,
 
 To select the features to be used, two methods were used:
 
-1. Application of Boruta using RandomForestRegressor method;
-2. EDA insights.
+**1.** Application of Boruta using RandomForestRegressor method;
+**2.** EDA insights.
 
-**From Boruta Feature Selection:** 'store', 'promo', 'store_type', 'assortment', 'competition_distance', 'competition_open_since_month', 'competition_open_since_year', 'promo2', 'promo2_since_week', 'promo2_since_year', 'competition_time_month', 'promo_time_week', 'promo_time_day', 'day_of_week_sin', 'day_of_week_cos', 'month_cos', 'day_sin', 'day_cos', week_of_year_cos'
+**From Boruta Feature Selection:** 'store', 'promo', 'store_type', 'assortment', 'competition_distance', 'competition_open_since_month', 'competition_open_since_year', 'promo2', 'promo2_since_week', 'promo2_since_year', 'competition_time_month', 'promo_time_week', 'day_of_week_sin', 'day_of_week_cos', 'month_cos', 'day_sin', 'day_cos', week_of_year_cos'
 
 **From EDA:** Features selected from Boruta go in accordance with EDA
 
@@ -137,11 +139,9 @@ The following Machine Learning models were tested and cross-validated:
 
 To evaluate the performance of the models, 3 metrics were used:
 
-**Mean Absolute Error (MAE)**
-
-**Mean Absolute Percentage Error (MAPE)**
-
-**Root Mean Square Error (RMSE)**
+- **Mean Absolute Error (MAE)**
+- **Mean Absolute Percentage Error (MAPE)**
+- **Root Mean Square Error (RMSE)**
 
 
 The indicators "MAE" and "MAPE" were the ones to assume the major importance as it represents the difference between the predicted and the real values. 
@@ -162,7 +162,31 @@ Although Random Forest Regressor holds the best MAE and MAPE result, **"XGBoost 
 
 ## **1.** Key findings on stores most relevant attributes.
 
+### Insight 1. Competition Distance
+> Stores with closer competition sell more than stores without close competition. Plots show how significant is the competition distance feature when plotted with sales. 
+
+![insight1](https://user-images.githubusercontent.com/68538809/151353116-74b6fd51-eb6f-482b-8f12-ccaa3283468d.png)
+
+### Insight 2. Holidays
+> When comparing Christmas, Easter, and Public Holidays, both Christmas and Easter holidays have a higher impact on sales. Although there is no data for 2015 Christmas, based on 2013 and 2014, easter and Christmas are the holidays that bring on average most revenue each store 
+
+![insight21](https://user-images.githubusercontent.com/68538809/151353757-ebe02fdc-6d40-4014-ba93-45940860a53d.png)
+![insight22](https://user-images.githubusercontent.com/68538809/151353783-48399572-4aac-43c5-915f-96793ecbba02.png)
+
+### Insight 3. 10 first days of the Month
+> The 10 first days of the month are the ones that on average bring more revenue to the stores, there is an inverse correlation between sales and month days. Although the first day of the month seems to be low on sales, the following 9 are high in sales.
+
+![insight3](https://user-images.githubusercontent.com/68538809/151354957-a4a313bd-6f41-4617-8902-9aa658781ce5.png)
+
+### Insight 4. Assortment
+> Based on the analysis of the types of assortment, basic, extended and extra, sales are on average much higher on stores with the assortment extra
+
+![insight41](https://user-images.githubusercontent.com/68538809/151356993-b62ee4b5-b83f-485b-a441-6b64905d9e82.png)
+![insight42](https://user-images.githubusercontent.com/68538809/151357016-856b907e-aafd-4dc9-985f-5e22f916abb4.png)
+![insight43](https://user-images.githubusercontent.com/68538809/151357126-d98f757d-a5b2-44f5-8a94-9711df083d09.png)
+
 ## **2.** Stores revenue prediction for the upcoming 6 weeks.
+
 
 ## **3.** Create online bot that automatically generates specific store revenue prediction based on request.
 
