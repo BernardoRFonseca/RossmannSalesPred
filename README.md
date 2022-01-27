@@ -97,7 +97,8 @@ In this section, Rescaling (Robust Scaler and MinMax Scaler), Encoding (One Hot,
 
 To select the features to be used, two methods were used:
 
-**1.** Application of Boruta using RandomForestRegressor method;
+**1.** Application of Boruta using RandomForestRegressor method
+
 **2.** EDA insights.
 
 **From Boruta Feature Selection:** 'store', 'promo', 'store_type', 'assortment', 'competition_distance', 'competition_open_since_month', 'competition_open_since_year', 'promo2', 'promo2_since_week', 'promo2_since_year', 'competition_time_month', 'promo_time_week', 'day_of_week_sin', 'day_of_week_cos', 'month_cos', 'day_sin', 'day_cos', week_of_year_cos'
