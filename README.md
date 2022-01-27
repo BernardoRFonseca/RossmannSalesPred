@@ -191,7 +191,7 @@ Although Random Forest Regressor holds the best MAE and MAPE result, **"XGBoost 
 
 ## **3.** Create online bot that automatically generates specific store revenue prediction based on request.
 
-![Telegram-Bot](https://user-images.githubusercontent.com/68538809/151388220-f6e3a17b-f344-42a0-bcc3-fd6c36584ea1.gif)
+![Telegram-Bot](https://user-images.githubusercontent.com/68538809/151389414-2fd5c709-9d9f-43ab-bdba-3657535382b6.gif)
 
 # 6. Conclusions
 
