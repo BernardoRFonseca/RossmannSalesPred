@@ -17,9 +17,7 @@ The solution will be available as a Telegram bot, which can be accessed by click
 [<img alt="Telegram" src="https://img.shields.io/badge/Telegram-2CA5E0?style=for-the-badge&logo=telegram&logoColor=white"/>](https://t.me/rossmann_bernardo_bot)
 ## 1.1 Project Deliverables.
 
-In this business context, as a data scientist, I intend to develop a machine learning model that predicts the 6 weeks sales per store.
- 
-With this model, the management team (including the CFO) will be able to manage the stores renovations.
+In this business context, as a data scientist, I intend to develop a machine learning model that predicts the 6 weeks sales per store. With this model, the management team (including the CFO) will be able to manage the stores renovations.
 
 A report with the following analysis is the deliverable goals:
 
@@ -131,6 +129,7 @@ A Telegram Bot was created, for a more user-friendly and faster access to the pr
 
 The following Machine Learning models were tested and cross-validated:
 
+- **Average Model (used as reference)**
 - **Linear Regression**
 - **Linear Regression Regularized - LASSO**
 - **Random Forest**
@@ -151,13 +150,12 @@ The following table discloses the cross-validated ("real") performance of all th
 
 |       Model Name          |        MAE CV       |     MAPE CV    |      RMSE CV       |
 |:-------------------------:|:-------------------:|:--------------:|:------------------:|
-| XGBoost Regressor          |  1096.96 +/- 179.03   | 0.15 +/- 0.02	 | 1578.28 +/- 246.71 |
-| Linear Regression Regularized Model - Lasso                     |  2117.23 +/- 342.11	   | 2117.23 +/- 342.11 | 3058.18 +/- 504.81 |
-| Linear Regression     |  2079.95 +/- 303.16	    | 0.29 +/- 0.01	 | 2958.57 +/- 473.83 |
-| Random Forest Regressor              |  843.13 +/- 225.18 | 0.12 +/- 0.02 | 2958.57 +/- 473.83 |
+| Random Forest Regressor          |  841.12 +/- 222.98   | 1259.44 +/- 327.52	 | 1259.44 +/- 327.52 |
+| XGBoost Regressor                     |  1096.96 +/- 179.03	   | 0.15 +/- 0.02 | 1578.28 +/- 246.71 |
+| Linear Regression     |  2079.95 +/- 303.16	    | 0.3 +/- 0.02	 | 2958.57 +/- 473.83 |
+| Linear Regression Regularized Model - Lasso              |  2117.23 +/- 342.11 | 0.29 +/- 0.01 | 3058.18 +/- 504.81 |
 
 Although Random Forest Regressor holds the best MAE and MAPE result, **"XGBoost Regressor"** will be the choosen model due to it's perfomance, low-memory usage and high fine-tunning possibilities.
-
 
 # 5. Business Results
 
@@ -195,5 +193,12 @@ Although Random Forest Regressor holds the best MAE and MAPE result, **"XGBoost 
 
 # 6. Conclusions
 
+Businesswise, I have created a model capable of predicting store sales for the upcoming 6 weeks. This is a major help in terms of guiding the CFO for store renovations budgets. The project has demonstrated that using a Machine Learning model is more effective than using any baseline model.
+
 # 7. Next Steps to Improve
 
+- Search for new features to improve the final result;
+
+- Improve fine-tuning parameters;
+
+- Improve TelegramBot to provide more detailed information.
