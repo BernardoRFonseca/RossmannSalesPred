@@ -15,6 +15,7 @@ In this context, **this project intends to provide the management team with a 6-
 The solution will be available as a Telegram bot, which can be accessed by clicking below:
 
 [<img alt="Telegram" src="https://img.shields.io/badge/Telegram-2CA5E0?style=for-the-badge&logo=telegram&logoColor=white"/>](https://t.me/rossmann_bernardo_bot)
+
 ## 1.1 Project Deliverables.
 
 In this business context, as a data scientist, I intend to develop a machine learning model that predicts the 6 weeks sales per store. With this model, the management team (including the CFO) will be able to manage the stores renovations.
@@ -186,10 +187,48 @@ Although Random Forest Regressor holds the best MAE and MAPE result, **"XGBoost 
 
 ## **2.** Stores revenue prediction for the upcoming 6 weeks.
 
+**Lineplot - Sales and Prediction ** The values predicted by the model are compared to the real values. Lines are closely drafted which is a good sign.
+
+**Error Line Plot - Sales** Having '1.0' as the representation of a null error rate, we can see how the model behaves across the predicted 6 weeks.  
+
+**Error Distplot** follows a normal distribution, which is good. Most of the stores recall on an acceptable error range.
+
+**Error Scatterplot** each point represents a store, ideally they would all be close to 0 on the x-axis. Some stores have a higher error showing that there is a variable rate in the error.
+
+![Plots](https://user-images.githubusercontent.com/68538809/152009377-78590d94-f38c-439e-ae9d-b09665a54934.png)
+
+Considering all information above stated, the sum of all stores predictions has been drafted and the best and worst scenarios were calculated along with the prediction. The following information sums up the overall project goal:
+
+|     Scenario          |        Values       |
+|:-------------------------:|:-------------------:|
+| Worst Case         |  €288,417,704.40   | 
+| **Prediction**                     |  €289,295,522.00   | 
+| Best Case     |  €290,173,376.54    | 
+
+To conclude, it is important to compare the baseline model prediction with the final model:
+
+|     Model          |        Prediction       |
+|:-------------------------:|:-------------------:|
+| Baseline Model         |  €243,723,748.12   | 
+| **XGBoost Regressor**                     |  €289,295,522.00   | 
+|   |    | 
+| Difference     |  +€45,571,806.88    | 
+
+
 
 ## **3.** Create online bot that automatically generates specific store revenue prediction based on request.
+ ![Heroku](https://img.shields.io/badge/Heroku-430098?style=for-the-badge&logo=heroku&logoColor=white) 
 
+I have used Heroku Cloud to store the model and for deployment, I have decided to connect it through a Telegram API.
+> The Bot can make predictions of total sales by the end of the next 6 weeks for a given store. The goal is to have more user-friendly and faster access to the predictions at any time.
+
+Please see the usability example below:
+ 
 ![Telegram-Bot](https://user-images.githubusercontent.com/68538809/151389414-2fd5c709-9d9f-43ab-bdba-3657535382b6.gif)
+
+To access the bot please click on the following shortcut:
+
+[<img alt="Telegram" src="https://img.shields.io/badge/Telegram-2CA5E0?style=for-the-badge&logo=telegram&logoColor=white"/>](https://t.me/rossmann_bernardo_bot)
 
 # 6. Conclusions
 
