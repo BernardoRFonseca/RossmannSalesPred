@@ -151,13 +151,19 @@ The following table discloses the cross-validated ("real") performance of all th
 
 |       Model Name          |        MAE CV       |     MAPE CV    |      RMSE CV       |
 |:-------------------------:|:-------------------:|:--------------:|:------------------:|
-| Random Forest Regressor          |  841.12 +/- 222.98   | 1259.44 +/- 327.52	 | 1259.44 +/- 327.52 |
+| Random Forest Regressor          |  841.12 +/- 222.98   | 0.12 +/- 0.02	 | 1259.44 +/- 327.52 |
 | XGBoost Regressor                     |  1096.96 +/- 179.03	   | 0.15 +/- 0.02 | 1578.28 +/- 246.71 |
 | Linear Regression     |  2079.95 +/- 303.16	    | 0.3 +/- 0.02	 | 2958.57 +/- 473.83 |
 | Linear Regression Regularized Model - Lasso              |  2117.23 +/- 342.11 | 0.29 +/- 0.01 | 3058.18 +/- 504.81 |
 
 Although Random Forest Regressor holds the best MAE and MAPE result, **"XGBoost Regressor"** will be the choosen model due to it's perfomance, low-memory usage and high fine-tunning possibilities.
 
+Final model (XGBoost Regressor) after Hyperparameter Fine Tuning shows the following performance:
+
+|       Model Name          |        MAE       |     MAPE CV    |      RMSE CV       |
+|:-------------------------:|:-------------------:|:--------------:|:------------------:|
+| XGBoost Regressor - Final Model      |  784.35  | 0.1195	 | 1111.66 |
+ 
 # 5. Business Results
 
 ## **1.** Key findings on stores most relevant attributes.
