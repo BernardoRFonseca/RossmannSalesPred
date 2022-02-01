@@ -187,13 +187,13 @@ Although Random Forest Regressor holds the best MAE and MAPE result, **"XGBoost 
 
 ## **2.** Stores revenue prediction for the upcoming 6 weeks.
 
-**Lineplot - Sales and Prediction ** The values predicted by the model are compared to the real values. Lines are closely drafted which is a good sign.
+**1. Lineplot - Sales and Prediction** The values predicted by the model are compared to the real values. Lines are closely drafted which is a good sign.
 
-**Error Line Plot - Sales** Having '1.0' as the representation of a null error rate, we can see how the model behaves across the predicted 6 weeks.  
+**2. Error Line Plot - Sales** Having '1.0' as the representation of a null error rate, we can see how the model behaves across the predicted 6 weeks.  
 
-**Error Distplot** follows a normal distribution, which is good. Most of the stores recall on an acceptable error range.
+**3. Error Distplot** follows a normal distribution, which is good. Most of the stores recall on an acceptable error range.
 
-**Error Scatterplot** each point represents a store, ideally they would all be close to 0 on the x-axis. Some stores have a higher error showing that there is a variable rate in the error.
+**4. Error Scatterplot** each point represents a store, ideally they would all be close to 0 on the x-axis. Some stores have a higher error showing that there is a variable rate in the error.
 
 ![Plots](https://user-images.githubusercontent.com/68538809/152009377-78590d94-f38c-439e-ae9d-b09665a54934.png)
 
